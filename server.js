@@ -2,8 +2,8 @@ const express = require("express");
 const app = express();
 const path = require("path")
 const port = 8080;
-const db = require("./db.js")
 const route = require("./route.js")
+const db = require("./db.js")
 db()
 app.use('/',route)
 app.listen(port, () => {

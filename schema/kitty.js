@@ -1,8 +1,9 @@
 const mongoose = require("mongoose")
+const { Schema } = mongoose;
 
-const kittySchema = new mongoose.Schema({
+const kittySchema = new Schema({
     title: String,
     gender: String,
 })
 
-module.export = mongoose.model('Kitty', kittySchema)
+module.exports = mongoose.model('Kitty', kittySchema)
